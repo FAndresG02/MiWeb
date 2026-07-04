@@ -1,0 +1,94 @@
+$text-white: #ffffff;
+$text-hover: #38bdf8;
+
+.container-fluid {
+  background-color: transparent;
+  padding: 0;
+
+  .navbar {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1030;
+
+    width: calc(100% - 3rem);
+    max-width: 1200px;
+
+    background: transparent !important;
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+
+    transition: box-shadow 0.3s ease, top 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-brand {
+      color: $text-white;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+
+    }
+
+    .navbar-toggler {
+      border: none;
+      box-shadow: none;
+
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+    }
+
+    // Menú
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $text-white;
+          font-weight: 500;
+          position: relative;
+          transition: color 0.25s ease;
+          padding-bottom: 4px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $text-hover;
+            transition: width 0.25s ease;
+          }
+
+          &:hover,
+          &.active {
+            color: $text-hover;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  padding-top: 6rem;
+}
