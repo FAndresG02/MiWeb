@@ -9,15 +9,6 @@ $text-muted: #94a3b8;
     position: relative;
     padding: 6rem 0;
 
-    background:
-        radial-gradient(circle at 20% 0%,
-            rgba(56, 189, 248, 0.12) 0%,
-            transparent 50%),
-        linear-gradient(180deg,
-            #0a1420 0%,
-            $bg-black 60%,
-            #000000 100%);
-
     .section-title {
         color: $text-white;
         font-weight: 800;

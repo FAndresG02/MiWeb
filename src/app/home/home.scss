@@ -6,19 +6,31 @@ $ice-blue-glow: #38bdf8;
 $text-white: #ffffff;
 $text-muted: #94a3b8;
 
-.hero-section {
-    position: relative;
-    min-height: 100vh;
-
+:host {
+    display: block;
     background:
         radial-gradient(circle at 20% 0%,
             rgba(56, 189, 248, 0.12) 0%,
             transparent 50%),
+        radial-gradient(circle at 80% 40%,
+            rgba(56, 189, 248, 0.07) 0%,
+            transparent 40%),
+        radial-gradient(circle at 20% 80%,
+            rgba(56, 189, 248, 0.05) 0%,
+            transparent 35%),
         linear-gradient(180deg,
             #0a1420 0%,
-            $bg-black 60%,
-            #000000 100%);
+            $bg-black 20%,
+            #000000 38%,
+            #000000 58%,
+            $bg-black 75%,
+            #0a1420 100%);
+}
 
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: none;
     display: flex;
     align-items: center;
     overflow: hidden;
