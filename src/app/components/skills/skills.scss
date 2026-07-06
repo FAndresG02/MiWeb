@@ -36,20 +36,21 @@ $text-muted: #94a3b8;
     }
 
     .skills-subtitle {
-      font-size: 1.05rem;
-      line-height: 1.6;
       color: $text-muted;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
     }
   }
 
   .section-heading {
     color: $ice-blue;
     font-family: monospace;
-    letter-spacing: 0.15rem;
-    font-size: 1.15rem;
-    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
-    font-weight: 600;
+    margin-left: 18rem;
+    margin-top: 1.25rem;
   }
 
   .skills-slider {
