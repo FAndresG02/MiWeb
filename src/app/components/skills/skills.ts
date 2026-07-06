@@ -14,9 +14,21 @@ export class Skills {
     { name: 'Flutter', icon: 'devicon-flutter-plain colored' },
     { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
     { name: 'TypeScript', icon: 'devicon-typescript-plain colored' },
-    { name: 'Git', icon: 'devicon-git-plain colored' },
-    { name: 'Linux', icon: 'devicon-linux-plain colored' },
+    { name: 'HTML5', icon: 'devicon-html5-plain colored' },
+    { name: 'CSS3', icon: 'devicon-css3-plain colored' },
+    { name: 'Bootstrap', icon: 'devicon-bootstrap-plain colored' },
+    { name: 'Angular Material', icon: 'devicon-angular-plain colored' }, // no tiene icono propio en devicon
+    { name: 'WordPress', icon: 'devicon-wordpress-plain colored' },
+  ];
+
+  tools = [
     { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
+    { name: 'MariaDB', icon: 'devicon-mariadb-plain colored' },
     { name: 'Docker', icon: 'devicon-docker-plain colored' },
+    { name: 'Visual Studio Code', icon: 'devicon-vscode-plain colored' },
+    { name: 'IntelliJ IDEA', icon: 'devicon-intellij-plain colored' },
+    { name: 'GitHub', icon: 'devicon-github-original colored' },
+    { name: 'Postman', icon: 'devicon-postman-plain colored' },
+    { name: 'Figma', icon: 'devicon-figma-plain colored' },
   ];
 }

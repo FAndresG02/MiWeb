@@ -1,4 +1,5 @@
-<section class="skills-section" id="skills">
+<div class="skills-section" id="skills">
+
   <div class="skills-header">
     <h2 class="skills-title">
       Mis <span class="highlight">Skills</span>
@@ -10,31 +11,65 @@
     </p>
   </div>
 
+  <h3>Tecnologías</h3>
+
   <div class="skills-slider">
     <div class="skills-track">
       @for (skill of skills; track skill.name) {
-        <div class="skill-item">
-          <div class="skill-badge">
-            {{ skill.name }}
-            <span class="skill-badge-arrow"></span>
-          </div>
-          <div class="skill-icon">
-            <i [class]="skill.icon"></i>
-          </div>
+      <div class="skill-item">
+        <div class="skill-badge">
+          {{ skill.name }}
+          <span class="skill-badge-arrow"></span>
         </div>
+        <div class="skill-icon">
+          <i [class]="skill.icon"></i>
+        </div>
+      </div>
       }
 
       @for (skill of skills; track skill.name) {
-        <div class="skill-item" aria-hidden="true">
-          <div class="skill-badge">
-            {{ skill.name }}
-            <span class="skill-badge-arrow"></span>
-          </div>
-          <div class="skill-icon">
-            <i [class]="skill.icon"></i>
-          </div>
+      <div class="skill-item" aria-hidden="true">
+        <div class="skill-badge">
+          {{ skill.name }}
+          <span class="skill-badge-arrow"></span>
         </div>
+        <div class="skill-icon">
+          <i [class]="skill.icon"></i>
+        </div>
+      </div>
       }
     </div>
   </div>
-</section>
+
+  
+  <h3>Herramientas</h3>
+
+  <div class="skills-slider">
+
+    <div class="skills-track">
+      @for (tool of tools; track tool.name) {
+      <div class="skill-item">
+        <div class="skill-badge">
+          {{ tool.name }}
+          <span class="skill-badge-arrow"></span>
+        </div>
+        <div class="skill-icon">
+          <i [class]="tool.icon"></i>
+        </div>
+      </div>
+      }
+
+      @for (tool of tools; track tool.name) {
+      <div class="skill-item" aria-hidden="true">
+        <div class="skill-badge">
+          {{ tool.name }}
+          <span class="skill-badge-arrow"></span>
+        </div>
+        <div class="skill-icon">
+          <i [class]="tool.icon"></i>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>
