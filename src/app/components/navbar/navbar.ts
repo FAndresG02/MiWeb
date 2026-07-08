@@ -13,4 +13,13 @@ export class Navbar {
   onWindowScroll() {
     this.scrolled = window.scrollY > 50;
   }
+
+  scrollTo(sectionId: string, event: Event) {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
 }

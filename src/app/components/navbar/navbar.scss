@@ -16,6 +16,7 @@ $text-hover: #38bdf8;
     max-width: 1200px;
 
     background: transparent !important;
+    border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 12px;
     padding: 1.75rem 1.5rem;
 
@@ -67,8 +68,7 @@ $text-hover: #38bdf8;
             transition: width 0.25s ease;
           }
 
-          &:hover,
-          &.active {
+          &:hover {
             color: $text-hover;
 
             &::after {
