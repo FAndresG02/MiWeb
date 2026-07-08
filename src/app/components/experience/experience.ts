@@ -10,15 +10,23 @@ export class Experience {
 
   experiences: WorkExperience[] = [
     {
-      role: 'Practicante de Desarrollo Full-Stack',
-      company: 'Nombre de la Empresa',
-      location: 'Guayaquil, Ecuador',
-      startDate: 'Ene 2024',
-      endDate: 'Jun 2024',
-      description: 'Desarrollo y mantenimiento de módulos backend con Spring Boot y APIs REST, además de componentes frontend en Angular para mejorar la experiencia de usuario.',
-      tags: ['Angular', 'Java', 'Spring Boot', 'MySQL'],
+      role: 'Desarrollador Web WordPress',
+      company: 'EM&E CIA. LTDA.',
+      location: 'Ecuador',
+      startDate: 'Oct 2024',
+      endDate: 'Feb 2025',
+      description: 'Desarrollo del sitio web corporativo de Electro Mobility EC, implementación de formularios y simuladores interactivos para cálculo energético, además de la personalización y optimización de temas y plugins. Sitio web: electromobilityec.com',
+      tags: ['WordPress', 'PHP', 'JavaScript', 'Calculated Fields Form'],
     },
-    
+    {
+      role: 'Desarrollador Odoo',
+      company: 'TESTNET S.A.S. B.I.C.',
+      location: 'Ecuador',
+      startDate: 'Mar 2025',
+      endDate: 'Jul 2025',
+      description: 'Personalización de módulos y vistas en Odoo 16, integración de la API de Twilio para notificaciones por WhatsApp y participación en procesos de migración, validación y adaptación multilenguaje de la plataforma.',
+      tags: ['Odoo 16', 'Python', 'PostgreSQL', 'Twilio', 'XML', 'Ubuntu'],
+    },
   ];
 }
 

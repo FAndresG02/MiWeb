@@ -1,35 +1,37 @@
 <div class="experience-section" id="experience">
 
-    <div class="experience-header">
-        <h2 class="experience-title">
-            Experiencia <span class="highlight">Laboral</span>
-        </h2>
-        <p class="experience-subtitle">
-            Mi trayectoria profesional, donde he aplicado y fortalecido mis habilidades como desarrollador full-stack.
-        </p>
-    </div>
+  <div class="experience-header">
+    <h2 class="experience-title">
+      Experiencia <span class="highlight">Laboral</span>
+    </h2>
+    <p class="experience-subtitle">
+      Mi trayectoria profesional, donde he aplicado y fortalecido mis habilidades como desarrollador full-stack.
+    </p>
+  </div>
 
-    <div class="experience-timeline">
-        @for (exp of experiences; track exp.company + exp.role) {
-        <div class="experience-item">
-            <div class="experience-dot"></div>
-
-            <div class="experience-card">
-                <div class="experience-date">{{ exp.startDate }} — {{ exp.endDate }}</div>
-
-                <h3 class="experience-role">{{ exp.role }}</h3>
-                <p class="experience-company">{{ exp.company }} · {{ exp.location }}</p>
-
-                <p class="experience-description">{{ exp.description }}</p>
-
-                <div class="experience-tags">
-                    @for (tag of exp.tags; track tag) {
-                    <span class="experience-tag">{{ tag }}</span>
-                    }
-                </div>
-            </div>
+  <div class="experience-grid">
+    @for (exp of experiences; track exp.company + exp.role; let i = $index) {
+      <div class="experience-item">
+        <div class="experience-connector">
+          <span class="experience-dot"></span>
         </div>
-        }
-    </div>
+
+        <div class="experience-card">
+          <div class="experience-date">{{ exp.startDate }} — {{ exp.endDate }}</div>
+
+          <h3 class="experience-role">{{ exp.role }}</h3>
+          <p class="experience-company">{{ exp.company }} · {{ exp.location }}</p>
+
+          <p class="experience-description">{{ exp.description }}</p>
+
+          <div class="experience-tags">
+            @for (tag of exp.tags; track tag) {
+              <span class="experience-tag">{{ tag }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
 
 </div>
