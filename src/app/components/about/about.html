@@ -25,11 +25,22 @@
                     experiencia, puedes <span class="highlight">descargar mi CV</span> justo aquí abajo.
                 </p>
 
-                <!-- Botón descarga CV -->
-                <a href="assets/docs/FranklinGuapisacaCV.pdf" download class="btn-download-cv">
-                    <i class="bi bi-download"></i>
-                    Descargar CV
-                </a>
+                <div class="buttons-group">
+                    <!-- Botón descarga CV -->
+                    <a href="assets/docs/FranklinGuapisacaCV.pdf" download class="btn-download-cv">
+                        <i class="bi bi-download"></i>
+                        Descargar CV
+                    </a>
+                    <a href="assets/docs/Titulo_NotaDeGrado.pdf" download class="btn-download-cv">
+                        <i class="bi bi-download"></i>
+                        Descargar Título/Nota de Grado
+                    </a>
+                    <a href="assets/docs/CartasRecomendacionUnidos.pdf" download class="btn-download-cv">
+                        <i class="bi bi-download"></i>
+                        Descargar Cartas de Recomendación
+                    </a>
+                </div>
+
             </div>
 
             <!-- Columna derecha: GitHub contributions -->
@@ -45,21 +56,36 @@
 
         </div>
 
-        <!-- Galería de 3 imágenes -->
-        <div class="row about-gallery gy-4">
-            <div class="col-md-4">
+        <!-- Galería de 5 imágenes -->
+        <div class="row about-gallery gy-4 row-cols-2 row-cols-md-5">
+            <div class="col">
                 <div class="gallery-item" (click)="openModal('assets/titulo.jpg')">
-                    <img src="assets/titulo.jpg" alt="Foto 1">
+                    <img src="assets/titulo.jpg" alt="Título">
+                    <span class="gallery-label">Título</span>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <div class="gallery-item" (click)="openModal('assets/mencion.jpg')">
-                    <img src="assets/mencion.jpg" alt="Foto 2">
+                    <img src="assets/mencion.jpg" alt="Mención">
+                    <span class="gallery-label">Mención</span>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <div class="gallery-item" (click)="openModal('assets/notaGrado.jpg')">
-                    <img src="assets/notaGrado.jpg" alt="Foto 3">
+                    <img src="assets/notaGrado.jpg" alt="Nota de Grado">
+                    <span class="gallery-label">Nota de Grado</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="gallery-item" (click)="openModal('assets/CartaRecomendacion.jpg')">
+                    <img src="assets/CartaRecomendacion.jpg" alt="Carta de Recomendación">
+                    <span class="gallery-label">Carta de Recomendación</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="gallery-item" (click)="openModal('assets/CartaRecomendacion2.jpg')">
+                    <img src="assets/CartaRecomendacion2.jpg" alt="Carta de Recomendación 2">
+                    <span class="gallery-label">Carta de Recomendación 2</span>
                 </div>
             </div>
         </div>
