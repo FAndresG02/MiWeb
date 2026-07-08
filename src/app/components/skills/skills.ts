@@ -17,9 +17,8 @@ export class Skills {
     { name: 'HTML5', icon: 'devicon-html5-plain colored' },
     { name: 'CSS3', icon: 'devicon-css3-plain colored' },
     { name: 'Bootstrap', icon: 'devicon-bootstrap-plain colored' },
-    { name: 'Angular Material', icon: 'devicon-angular-plain colored' }, // no tiene icono propio en devicon
-    { name: 'WordPress', icon: 'devicon-wordpress-plain colored' },
-  ];
+    { name: 'Angular Material', icon: 'devicon-angular-plain colored' }
+    ];
 
   tools = [
     { name: 'MySQL', icon: 'devicon-mysql-plain colored' },

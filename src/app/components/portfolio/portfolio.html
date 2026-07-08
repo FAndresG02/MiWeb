@@ -1,0 +1,47 @@
+<div class="portfolio-section" id="portfolio">
+
+    <div class="portfolio-header">
+        <h2 class="portfolio-title">
+            Mi <span class="highlight">Portafolio</span>
+        </h2>
+        <p class="portfolio-subtitle">
+            Una selección de proyectos donde he aplicado mis conocimientos en desarrollo full-stack,
+            desde la idea inicial hasta la implementación final.
+        </p>
+    </div>
+
+    <div class="portfolio-grid">
+        @for (project of projects; track project.name) {
+        <div class="project-card">
+            <div class="project-image">
+                <img [src]="project.image" [alt]="project.name" loading="lazy" />
+            </div>
+
+            <div class="project-content">
+                <h3 class="project-name">{{ project.name }}</h3>
+                <p class="project-description">{{ project.description }}</p>
+
+                <div class="project-tags">
+                    @for (tag of project.tags; track tag) {
+                    <span class="project-tag">{{ tag }}</span>
+                    }
+                </div>
+
+                <div class="project-links">
+                    @if (project.demoUrl) {
+                    <a [href]="project.demoUrl" target="_blank" rel="noopener noreferrer" class="project-link demo">
+                        Ver Demo
+                    </a>
+                    }
+                    @if (project.repoUrl) {
+                    <a [href]="project.repoUrl" target="_blank" rel="noopener noreferrer" class="project-link repo">
+                        <i class="devicon-github-original"></i> Código
+                    </a>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+
+</div>
