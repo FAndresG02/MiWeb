@@ -15,7 +15,9 @@ $text-hover: #38bdf8;
     width: calc(100% - 3rem);
     max-width: 1200px;
 
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 12px;
     padding: 1.75rem 1.5rem;
