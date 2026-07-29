@@ -29,7 +29,7 @@ export class Portfolio {
       name: 'Diagnóstico Vehicular Inteligente',
       description: 'Aplicación móvil para el diagnóstico y mantenimiento preventivo de vehículos mediante el análisis de códigos OBD-II e inteligencia artificial.',
       image: 'assets/portfolioImages/appCar.png',
-      tags: ['Flutter', 'Python', 'Flask', 'Dart', 'ESP32', 'Arduino', 'OBD-II', 'WiFi', 'Firebase'],
+      tags: ['Flutter', 'PHP', 'Laravel', 'Flask', 'Dart', 'ESP32', 'Arduino', 'OBD-II', 'WiFi', 'Firebase'],
       repoUrl: 'https://github.com/FAndresG02/Diagnostico-Vehicular-Inteligente.git',
     },
 
