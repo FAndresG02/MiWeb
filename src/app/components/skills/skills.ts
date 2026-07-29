@@ -11,6 +11,8 @@ export class Skills {
     { name: 'Angular', icon: 'devicon-angular-plain colored' },
     { name: 'Java', icon: 'devicon-java-plain colored' },
     { name: 'Spring Boot', icon: 'devicon-spring-plain colored' },
+    { name: 'PHP', icon: 'devicon-php-plain colored' },
+    { name: 'Laravel', icon: 'devicon-laravel-plain colored' },
     { name: 'Flutter', icon: 'devicon-flutter-plain colored' },
     { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
     { name: 'TypeScript', icon: 'devicon-typescript-plain colored' },
@@ -18,7 +20,7 @@ export class Skills {
     { name: 'CSS3', icon: 'devicon-css3-plain colored' },
     { name: 'Bootstrap', icon: 'devicon-bootstrap-plain colored' },
     { name: 'Angular Material', icon: 'devicon-angular-plain colored' }
-    ];
+  ];
 
   tools = [
     { name: 'MySQL', icon: 'devicon-mysql-plain colored' },
